@@ -1,8 +1,46 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  font: 16px 'Poppins', Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+#taskInput {
+  width: 60%;
+  height: 30px;
+  resize: none;
+  font: 16px 'Poppins', Helvetica,
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+#addButton {
+  cursor: pointer;
+  height: 30px;
+  margin: 10px;
+}
+
+#itemList li {
+  list-style-type: none;
+}
+
+.btnExc {
+  cursor: pointer;
+}
+
+.taskDivider {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

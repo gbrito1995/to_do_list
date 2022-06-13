@@ -1,5 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div(class="container")
+    p TO DO LIST
+    div(class="taskDivider")
+      input(id='taskInput')
+      button(id='addButton')
+        i(class='fa fa-plus')
+    ul(id='itemList')
+    
+
+  script(src='../javascripts/main.js')
