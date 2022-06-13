@@ -1,7 +1,12 @@
 let inputField = document.getElementById('taskInput');
 let addButton = document.getElementById('addButton');
-let itemList = document.getElementById('itemList');
-let list = [];
+let itemList = document.getElementById('itemList').children[0];
+let list = [
+  { "id": 99, "task": "Estudar", "isFinished": false },
+  { "id": 100, "task": "Treinar", "isFinished": false },
+  { "id": 101, "task": "Jogar", "isFinished": false },
+  { "id": 102, "task": "Trabalhar", "isFinished": false }
+];
 let i = 0;
 
 let fnAddTask = (task) => {
@@ -17,14 +22,18 @@ let fnAddTask = (task) => {
 let fnAddItems = (i, task) => {
 
   let html =
-    `<li id="${i}"> 
-       <i class="fa fa-trash btnExc" 
+    `<tr id="${i}"> 
+      <td>
+        <input type="checkbox"/>  
+          ${task}      
+      </td>
+      <td>
+        <i class="fa fa-trash btnExc" 
           style="color:red;"
           onclick="fnRmItems(${i})">
         </i>
-       ${task}
-      <input type="checkbox"/>
-    </li>`;
+      </td>
+    </tr>`;
 
   itemList.insertAdjacentHTML("beforeend", html);
 
@@ -50,6 +59,10 @@ addButton.addEventListener('click', () => {
 
 })
 
+//teste
+list.forEach((item) => {
+  fnAddItems(item.id, item.task);
+})
 
 
 

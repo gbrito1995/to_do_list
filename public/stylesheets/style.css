@@ -30,9 +30,33 @@ a {
   margin: 10px;
 }
 
+/*
 #itemList li {
   list-style-type: none;
 }
+*/
+
+#itemList {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#itemList tr td:first-child {
+  color: #fff;
+}
+
+#itemList tr td:nth-child(2) {
+  text-align: center;
+}
+
+#itemList tr:hover {
+  background-color: #48639c;
+}
+
+#itemList tr {
+  border-bottom: 1px solid gray;
+}
+
 
 .btnExc {
   cursor: pointer;
@@ -43,4 +67,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.divItems {
+  width: 80%;
 }
