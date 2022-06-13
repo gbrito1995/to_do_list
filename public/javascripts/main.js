@@ -29,7 +29,8 @@ let fnAddItems = (i, task) => {
       </td>
       <td>
         <i class="fa fa-trash btnExc" 
-          style="color:red;"
+          style="color:red;
+          font-size:1rem"          
           onclick="fnRmItems(${i})">
         </i>
       </td>

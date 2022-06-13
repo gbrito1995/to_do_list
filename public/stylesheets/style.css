@@ -41,16 +41,12 @@ a {
   border-collapse: collapse;
 }
 
-#itemList tr td:first-child {
-  color: #fff;
-}
-
 #itemList tr td:nth-child(2) {
   text-align: center;
 }
 
 #itemList tr:hover {
-  background-color: #48639c;
+  background-color: #DADDD8;
 }
 
 #itemList tr {
