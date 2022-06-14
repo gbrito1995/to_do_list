@@ -24,8 +24,10 @@ let fnAddItems = (i, task) => {
   let html =
     `<tr id="${i}"> 
       <td>
-        <input type="checkbox"/>  
-          ${task}      
+        <input type="checkbox"/>            
+      </td>      
+      <td>
+        ${task}      
       </td>
       <td>
         <i class="fa fa-trash btnExc" 
