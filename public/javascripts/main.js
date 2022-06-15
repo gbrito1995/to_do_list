@@ -68,6 +68,7 @@ let fnRmItems = (thisListId) => {
 addButton.addEventListener('click', () => {
 
   fnAddTask(inputField.value);
+  fnToggleBtn();
 
 })
 
@@ -85,6 +86,24 @@ closeRm.addEventListener('click', () => {
 
 })
 
+
+inputField.addEventListener('keyup', () => {
+
+  fnToggleBtn();
+
+})
+
+let fnToggleBtn = () => {
+
+  if (!inputField.value) {
+    addButton.style.opacity = 0.7;
+    addButton.disabled = true;
+  } else {
+    addButton.style.opacity = 1;
+    addButton.disabled = false;
+  }
+
+}
 
 //teste
 list.forEach((item) => {
