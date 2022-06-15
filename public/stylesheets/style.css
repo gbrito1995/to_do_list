@@ -125,12 +125,13 @@ input[type="checkbox"]::before {
 }
 
 input[type="checkbox"]:checked::before {
-  transform: scale(1);
+  transform: scale(1.4);
 }
 
 .title {
   font-size: 1.4em;
   font-weight: bold;
+  margin-top: 4em;
 }
 
 .fa-plus {
@@ -138,19 +139,50 @@ input[type="checkbox"]:checked::before {
 }
 
 #taskAdded {
-  width: 80px;
-  height: 60px;
+  width: 200px;
+  height: 70px;
   background-color: var(--sixthColor);
   color: white;
   position: fixed;
-  right: -10em;
+  right: -20em;
   top: 2em;
+  font-size: 1.5em;
+  text-align: center;
+  display: flex;
+  border-radius: 4px;
+  opacity: 0.7;
 }
 
-.taskRemoved {
-  width: 80px;
-  height: 60px;
+#taskAdded:hover {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+#taskRemoved {
+  width: 200px;
+  height: 70px;
   background-color: var(--fithColor);
   color: white;
+  position: fixed;
+  right: -20em;
+  bottom: 2em;
+  font-size: 1.5em;
+  text-align: center;
+  display: flex;
+  border-radius: 4px;
+  opacity: 0.7;
 
+}
+
+#taskRemoved:hover {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+@media (max-width: 630px) {
+
+  .title {
+
+    margin-top: 6em;
+  }
 }

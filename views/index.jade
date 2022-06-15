@@ -2,8 +2,12 @@ extends layout
 
 block content
   div(class="container")
-    div(id="taskAdded") task added successfully 
-    div(class="taskRemoved") Task removed
+    div(id="taskAdded")          
+      p(style="flex-grow: 3;") Task added            
+      i(class="fa fa-close" style="flex-grow: 1;") 
+    div(id="taskRemoved") 
+      p(style="flex-grow: 3;") Task removed
+      i(class="fa fa-close" style="flex-grow: 1;") 
     p(class="title") TO DO LIST
     div(class="taskDivider")
       input(id='taskInput')
