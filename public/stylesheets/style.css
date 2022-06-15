@@ -1,7 +1,8 @@
 body {
   padding: 0;
   margin: 0;
-  font: 16px 'Poppins', Helvetica, Arial, sans-serif;
+  font: 'Poppins', Helvetica, Arial, sans-serif;
+  background-color: #EEEFEF;
 }
 
 a {
@@ -10,9 +11,18 @@ a {
 
 #taskInput {
   width: 60%;
+  max-width: 600px;
   height: 30px;
   resize: none;
-  font: 16px 'Poppins', Helvetica,
+  background-color: #fff;
+  /*border: 2px solid black;*/
+  border-radius: 10px;
+  transition: 180ms box-shadow ease-in-out;
+}
+
+#taskInput:focus {
+  border-color: hsl(271, 76%, 53%);
+  outline: 3px solid transparent;
 }
 
 .container {
@@ -28,11 +38,18 @@ a {
   cursor: pointer;
   height: 30px;
   margin: 10px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: rebeccapurple;
 }
 
 #itemList {
-  width: 100%;
+  width: 80%;
+  max-width: 800px;
   border-collapse: collapse;
+  margin: auto;
+  font-size: 1.2em;
 }
 
 #itemList tr td:first-child {
@@ -40,7 +57,8 @@ a {
 }
 
 #itemList tr td:nth-child(3) {
-  text-align: center;
+  text-align: right;
+  padding-right: 1em;
 }
 
 #itemList tr:hover {
@@ -54,9 +72,11 @@ a {
 
 .btnExc {
   cursor: pointer;
+  color: red;
 }
 
 .taskDivider {
+  padding: 1px;
   width: 80%;
   display: flex;
   align-items: center;
@@ -65,6 +85,7 @@ a {
 
 .divItems {
   width: 80%;
+  margin: 0 auto;
 }
 
 input[type="checkbox"] {
@@ -77,7 +98,7 @@ input[type="checkbox"] {
   width: 1.15em;
   height: 1.15em;
   border: 0.13em solid currentColor;
-  border-radius: 0.15em;
+  border-radius: 50%;
   transform: translateY(-0.075em);
   display: grid;
   place-content: center;
@@ -96,4 +117,13 @@ input[type="checkbox"]::before {
 
 input[type="checkbox"]:checked::before {
   transform: scale(1);
+}
+
+.title {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.fa-plus {
+  color: #fff;
 }

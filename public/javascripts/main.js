@@ -2,10 +2,10 @@ let inputField = document.getElementById('taskInput');
 let addButton = document.getElementById('addButton');
 let itemList = document.getElementById('itemList').children[0];
 let list = [
-  { "id": 99, "task": "Estudar", "isFinished": false },
+  /*{ "id": 99, "task": "Estudar", "isFinished": false },
   { "id": 100, "task": "Treinar", "isFinished": false },
   { "id": 101, "task": "Jogar", "isFinished": false },
-  { "id": 102, "task": "Trabalhar", "isFinished": false }
+  { "id": 102, "task": "Trabalhar", "isFinished": false }*/
 ];
 let i = 0;
 
@@ -31,8 +31,7 @@ let fnAddItems = (i, task) => {
       </td>
       <td>
         <i class="fa fa-trash btnExc" 
-          style="color:red;
-          font-size:1rem"          
+          style="font-size: 1.3em"          
           onclick="fnRmItems(${i})">
         </i>
       </td>
