@@ -140,7 +140,7 @@ input[type="checkbox"]:checked::before {
 #taskAdded {
   width: 80px;
   height: 60px;
-  background-color: var(--secondColor);
+  background-color: var(--sixthColor);
   color: white;
   position: fixed;
   right: -10em;
