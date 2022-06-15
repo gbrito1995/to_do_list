@@ -1,3 +1,9 @@
+:root {
+  --firstColor: #F652A0;
+  --secondColor: #36EEE0;
+  --thirdColor: #4C5270;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -21,7 +27,7 @@ a {
 }
 
 #taskInput:focus {
-  border-color: hsl(271, 76%, 53%);
+  border-color: var(--firstColor);
   outline: 3px solid transparent;
 }
 
@@ -41,7 +47,7 @@ a {
   font-size: 1.2em;
   border-radius: 10px;
   border-color: transparent;
-  background-color: rebeccapurple;
+  background-color: var(--firstColor);
 }
 
 #itemList {
@@ -72,7 +78,7 @@ a {
 
 .btnExc {
   cursor: pointer;
-  color: red;
+  color: var(--rmNotification);
 }
 
 .taskDivider {
@@ -110,7 +116,7 @@ input[type="checkbox"]::before {
   height: 0.65em;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em blueviolet;
+  box-shadow: inset 1em 1em var(--firstColor);
   transform-origin: bottom left;
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }
@@ -126,4 +132,19 @@ input[type="checkbox"]:checked::before {
 
 .fa-plus {
   color: #fff;
+}
+
+.taskAdded {
+  width: 80px;
+  height: 60px;
+  background-color: var(--secondColor);
+  color: white;
+}
+
+.taskRemoved {
+  width: 80px;
+  height: 60px;
+  background-color: var(--thirdColor);
+  color: white;
+
 }
