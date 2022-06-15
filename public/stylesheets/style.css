@@ -2,6 +2,9 @@
   --firstColor: #F652A0;
   --secondColor: #36EEE0;
   --thirdColor: #4C5270;
+  --fourthColor: #BCECE0;
+  --fithColor: #F51720;
+  --sixthColor: #059DC0;
 }
 
 body {
@@ -134,17 +137,20 @@ input[type="checkbox"]:checked::before {
   color: #fff;
 }
 
-.taskAdded {
+#taskAdded {
   width: 80px;
   height: 60px;
   background-color: var(--secondColor);
   color: white;
+  position: fixed;
+  right: -10em;
+  top: 2em;
 }
 
 .taskRemoved {
   width: 80px;
   height: 60px;
-  background-color: var(--thirdColor);
+  background-color: var(--fithColor);
   color: white;
 
 }
