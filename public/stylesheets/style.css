@@ -24,7 +24,7 @@ a {
   height: 30px;
   resize: none;
   background-color: #fff;
-  /*border: 2px solid black;*/
+  border: 2px solid black;
   border-radius: 10px;
   transition: 180ms box-shadow ease-in-out;
 }
