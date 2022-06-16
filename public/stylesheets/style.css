@@ -7,10 +7,13 @@
   --sixthColor: #059DC0;
 }
 
+* {
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
   background-color: #EEEFEF;
 }
 
@@ -44,10 +47,10 @@ a {
 }
 
 #addButton {
-  cursor: pointer;
+  cursor: not-allowed;
   height: 30px;
   margin: 10px;
-  font-size: 1.2em;
+  font-size: 1em;
   border-radius: 10px;
   border-color: transparent;
   background-color: var(--firstColor);

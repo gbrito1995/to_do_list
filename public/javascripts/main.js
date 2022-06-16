@@ -115,9 +115,11 @@ let fnToggleBtn = () => {
   if (!inputField.value) {
     addButton.style.opacity = 0.7;
     addButton.disabled = true;
+    addButton.style.cursor = 'not-allowed';
   } else {
     addButton.style.opacity = 1;
     addButton.disabled = false;
+    addButton.style.cursor = 'pointer';
   }
 
 }
