@@ -20,15 +20,26 @@ list.forEach((item) => {
 })
 */
 
+let fnNotificationEffect = (idNotification) => {
+
+  idNotification.style.right = '3em';
+  idNotification.style.transition = 'right 2s';
+
+  setTimeout(() => {
+
+    idNotification.style.right = '-20em';
+    idNotification.style.transition = 'right 2s';
+
+  }, 4000)
+}
+
 let fnAddTask = (task) => {
 
   if (task) {
     list.push({ id: ++i, task: task, isFinished: false });
 
     fnAddItems(i, task);
-
-    taskAdded.style.right = '3em';
-    taskAdded.style.transition = 'right 2s';
+    fnNotificationEffect(taskAdded);
   }
 
 }
@@ -67,8 +78,7 @@ let fnRmItems = (thisListId) => {
   list.splice(rmElementIndex, 1);
   rmElement.remove();
 
-  taskRemoved.style.right = '3em';
-  taskRemoved.style.transition = 'right 2s';
+  fnNotificationEffect(taskRemoved);
 
 }
 
