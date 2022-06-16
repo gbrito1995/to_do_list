@@ -5,13 +5,20 @@ let taskAdded = document.getElementById('taskAdded');
 let taskRemoved = document.getElementById('taskRemoved');
 let closeAdd = taskAdded.children[1];
 let closeRm = taskRemoved.children[1];
-let list = [
+let list = [/*
   { "id": 99, "task": "Estudar", "isFinished": false },
   { "id": 100, "task": "Treinar", "isFinished": false },
   { "id": 101, "task": "Jogar", "isFinished": false },
-  { "id": 102, "task": "Trabalhar", "isFinished": false }
+  { "id": 102, "task": "Trabalhar", "isFinished": false }*/
 ];
 let i = 0;
+
+/*
+insert task
+list.forEach((item) => {
+  fnAddItems(item.id, item.task);
+})
+*/
 
 let fnAddTask = (task) => {
 
@@ -104,11 +111,3 @@ let fnToggleBtn = () => {
   }
 
 }
-
-//teste
-list.forEach((item) => {
-  fnAddItems(item.id, item.task);
-})
-
-
-
