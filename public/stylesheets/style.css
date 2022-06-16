@@ -10,7 +10,7 @@
 body {
   padding: 0;
   margin: 0;
-  font: 'Poppins', Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
   background-color: #EEEFEF;
 }
 
@@ -147,7 +147,7 @@ input[type="checkbox"]:checked::before {
   position: fixed;
   right: -20em;
   top: 2em;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
   display: flex;
   border-radius: 4px;
@@ -167,7 +167,7 @@ input[type="checkbox"]:checked::before {
   position: fixed;
   right: -20em;
   bottom: 2em;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
   display: flex;
   border-radius: 4px;
