@@ -123,3 +123,9 @@ let fnToggleBtn = () => {
   }
 
 }
+
+document.addEventListener('keydown', (e) => {
+  if (e.key == 'Enter') {
+    fnAddTask(inputField.value);
+  }
+})
